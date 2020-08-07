@@ -39,18 +39,18 @@ public class SimpleList
             return 0;
         }
         else{
-            return LengthCounter(this.beginNode,0);
+            return lengthCounter(this.beginNode,0);
         }
     }
     
     /**
      * Internal recursive method for drill down into the list.
      */
-    private int LengthCounter(SimpleNode node, int i)
+    private int lengthCounter(SimpleNode node, int i)
     {
         i++;
         if(node.getNextNode()!=null){
-            return LengthCounter(node.getNextNode(),i);
+            return lengthCounter(node.getNextNode(),i);
         }
         return i;    
     }
